@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miss Sunflower — Perfect BB Base</title>
+  <meta name="description" content="Miss Sunflower Perfect BB Base Beauty Booster SPF50 PA++++ — Whitening, UV Protecting, Wrinkle Improvement." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Inter:wght@300;400;600&family=Noto+Sans+Khmer:wght@400;600;700&family=Moul&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fixed 3D stage -->
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-logo">
+      <span class="l-miss">Miss</span>
+      <span class="l-sun">Sunflower</span>
+    </div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+
+  <header class="nav">
+    <a href="#hero" class="brand">Miss <em>Sunflower</em></a>
+    <nav>
+      <a href="#benefits">Benefits</a>
+      <a href="#protect">SPF50</a>
+      <a href="#texture">Texture</a>
+      <a href="#how">How to use</a>
+      <a href="#owner" class="km">ម្ចាស់ Brand</a>
+      <a href="#ai">AI Advisor</a>
+    </nav>
+  </header>
+
+  <div id="progress"><i></i></div>
+
+  <!-- Auto-play tour button -->
+  <button id="autoplay" class="autoplay" type="button" aria-pressed="false" aria-label="Auto play the page">
+    <svg class="ap-ring" viewBox="0 0 60 60" aria-hidden="true">
+      <circle class="ap-track" cx="30" cy="30" r="27" />
+      <circle class="ap-fill" cx="30" cy="30" r="27" />
+    </svg>
+    <span class="ap-icon" aria-hidden="true">
+      <svg class="ap-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg>
+      <svg class="ap-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" /></svg>
+    </span>
+    <span class="ap-label"><b>Auto Play</b><small class="ap-step km">ទស្សនាដោយស្វ័យប្រវត្តិ</small></span>
+  </button>
+
+  <main>
+    <!-- 1. HERO -->
+    <section id="hero" class="panel panel-left">
+      <div class="copy">
+        <p class="eyebrow">Perfect BB Base · Beauty Booster</p>
+        <h1 class="title">Miss<br /><span class="script">Sunflower</span></h1>
+        <p class="km big">លាបចូល <strong>ស្បែកមុខល្អ</strong></p>
+        <ul class="checks km">
+          <li>មិនប្រតាក មិនស្អិត</li>
+          <li>មិនកក មិនសាព្រួស</li>
+        </ul>
+        <div class="btn-wrap"><a class="btn magnetic" href="#benefits"><span>Discover ↓</span></a></div>
+      </div>
+      <div class="scroll-hint"><span></span>Scroll</div>
+    </section>
+
+    <!-- Marquee ribbon -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track km">
+        <span>ជួយការពារពីកម្តៅថ្ងៃ</span><i>✦</i>
+        <span>SPF50 PA++++</span><i>✦</i>
+        <span>ទប់ស្កាត់ការឡើងខ្លាញ់</span><i>✦</i>
+        <span>Whitening</span><i>✦</i>
+        <span>ជួយបិទបាំងស្នាមលើផ្ទៃមុខបានល្អ</span><i>✦</i>
+        <span>Wrinkle Improvement</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- 2. BENEFITS -->
+    <section id="benefits" class="panel panel-right">
+      <div class="copy">
+        <p class="eyebrow">01 — Benefits</p>
+        <h2 class="split">Three boosters in one tube</h2>
+        <div class="cards">
+          <article class="card tilt">
+            <span class="ico">✦</span>
+            <h3>Whitening</h3>
+            <p>Brightens and evens the look of skin tone for a clear, radiant finish.</p>
+          </article>
+          <article class="card tilt">
+            <span class="ico">☀</span>
+            <h3>UV Protecting</h3>
+            <p>SPF50 PA++++ shields against UVA &amp; UVB every day.</p>
+          </article>
+          <article class="card tilt">
+            <span class="ico">❀</span>
+            <h3>Wrinkle Improvement</h3>
+            <p>Sunflower care helps skin look smoother and firmer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SPF -->
+    <section id="protect" class="panel panel-left">
+      <div class="copy">
+        <p class="eyebrow">02 — Protection</p>
+        <h2 class="huge"><span class="gold">SPF50</span><br />PA++++</h2>
+        <p class="km">ជួយការពារពីកម្តៅថ្ងៃ</p>
+        <p>Highest-grade PA rating against UVA ageing rays, with broad SPF50 coverage for long days in the Cambodian sun.</p>
+      </div>
+    </section>
+
+    <!-- 4. TEXTURE -->
+    <section id="texture" class="panel panel-right">
+      <div class="copy">
+        <p class="eyebrow">03 — Texture</p>
+        <h2 class="split">Light. Silky. Flawless.</h2>
+        <ul class="ribbons km">
+          <li>ជួយការពារពីកម្តៅថ្ងៃ</li>
+          <li>ទប់ស្កាត់ការឡើងខ្លាញ់</li>
+          <li>ជួយបិទបាំងស្នាមលើផ្ទៃមុខបានល្អ</li>
+        </ul>
+        <p>Blends into the skin instantly — no greasy shine, no sticky feel, no caking.</p>
+      </div>
+    </section>
+
+    <!-- 5. HOW TO USE -->
+    <section id="how" class="panel panel-left">
+      <div class="copy">
+        <p class="eyebrow">04 — Ritual</p>
+        <h2 class="split">How to use</h2>
+        <ol class="steps">
+          <li><b>Cleanse</b> and moisturise your face.</li>
+          <li><b>Dot</b> a pea-sized amount on forehead, cheeks, nose &amp; chin.</li>
+          <li><b>Blend</b> outward with fingertips or a sponge.</li>
+          <li><b>Reapply</b> every 2–3 hours under strong sun.</li>
+        </ol>
+        <p class="meta">Net 70ml · Made in Thailand</p>
+      </div>
+    </section>
+
+    <!-- 6. BRAND OWNER -->
+    <section id="owner" class="panel panel-owner">
+      <div class="owner-grid">
+        <div class="owner-copy copy">
+          <p class="eyebrow km">05 — ម្ចាស់ Brand</p>
+          <h2 class="km-title">ស្ថាបនិក<br /><span class="gold">Miss Sunflower</span></h2>
+          <!-- EDIT: put the brand owner's real name here -->
+          <p class="owner-name km">ម្ចាស់ Brand · Founder &amp; CEO</p>
+          <blockquote class="km">
+            “ខ្ញុំបង្កើត Miss Sunflower ដើម្បីឲ្យនារីគ្រប់រូប មានទំនុកចិត្តលើសម្រស់របស់ខ្លួន រៀងរាល់ថ្ងៃ។”
+          </blockquote>
+          <p>Beauty that starts with healthy, protected skin — bright like a sunflower, every single day.</p>
+          <div class="stats">
+            <div><b data-count="50">0</b><span>SPF</span></div>
+            <div><b data-count="4" data-suffix="+">0</b><span>PA rating</span></div>
+            <div><b data-count="70" data-suffix="ml">0</b><span>Per tube</span></div>
+          </div>
+          <p class="signature">Miss Sunflower</p>
+        </div>
+
+        <figure class="owner-photo">
+          <div class="photo-tilt">
+            <div class="photo-frame">
+              <img src="images/brand-owner.png" alt="Miss Sunflower brand owner holding the Perfect BB Base and Sun Serum" />
+            </div>
+            <div class="photo-glow"></div>
+            <span class="badge badge-1 km">ម្ចាស់ Brand</span>
+            <span class="badge badge-2">SPF50 PA++++</span>
+          </div>
+          <figcaption class="km">ផលិតផលពិត · គុណភាពពិត</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 7. AI ADVISOR -->
+    <section id="ai" class="panel panel-chat">
+      <div class="chat-wrap">
+        <p class="eyebrow">06 — Ask Sunny 🌻</p>
+        <h2 class="split">AI Beauty Advisor</h2>
+        <p class="sub">Powered by Google Gemini. Ask in Khmer or English.</p>
+
+        <div class="chat" id="chat">
+          <div class="msgs" id="msgs" aria-live="polite" data-lenis-prevent>
+            <div class="msg model">សួស្តី! I'm Sunny 🌻 Ask me anything about Miss Sunflower BB Base — skin type, how to apply, SPF…</div>
+          </div>
+          <div class="chips" id="chips">
+            <button type="button">Is it good for oily skin?</button>
+            <button type="button">How do I apply it?</button>
+            <button type="button">តើវាអាចការពារថ្ងៃបានទេ?</button>
+          </div>
+          <form id="chat-form" autocomplete="off">
+            <input id="chat-input" type="text" maxlength="1000" placeholder="Type your question…" aria-label="Your question" />
+            <button type="submit" id="send">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="images/miss-sunflower.png" alt="Miss Sunflower Perfect BB Base product poster" loading="lazy" />
+    <p>© Miss Sunflower · Perfect BB Base Beauty Booster SPF50 PA++++</p>
+  </footer>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="module" src="js/ui.js"></script>
+  <script type="module" src="js/scene.js"></script>
+  <script type="module" src="js/chat.js"></script>
+</body>
+</html>
